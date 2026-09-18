@@ -38,7 +38,7 @@
     <article class="milestone-card">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <img src="img/intel-founded.png" alt="Intel founded in 1968" />
+      <img src="img/intel-founded.png" alt="Intel's founders Robert Noyce and Gordon Moore" />
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
@@ -50,7 +50,7 @@
     <article class="milestone-card">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <img src="img/first-microprocessor.png" alt="Close-up of an Intel microprocessor" />
+      <img src="img/first-microprocessor.png" alt="Close-up of the first microprocessor, the 4004" />
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
@@ -62,7 +62,7 @@
     <article class="milestone-card">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <img src="img/8086-processor.png" alt="Intel 8086 processor" />
+      <img src="img/8086-processor.png" alt="Close-up of the 8086 processor" />
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
@@ -73,7 +73,7 @@
     <article class="milestone-card">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <img src="img/386-processor.png" alt="Intel 386 processor" />
+      <img src="img/386-processor.png" alt="Close-up of the 386 processor" />
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
@@ -85,7 +85,7 @@
     <article class="milestone-card">
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img src="img/greenhouse-gases.jpg" alt="Semiconductor connections on a processor" />
+      <img src="img/greenhouse-gases.jpg" alt="Illustration of different greenhouse gases" />
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
@@ -98,7 +98,7 @@
     <article class="milestone-card">
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img src="img/intel-rise.png" alt="Intel's early technology heritage" />
+      <img src="img/intel-rise.png" alt="Intel RISE sustainability strategy graphic" />
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
@@ -110,7 +110,7 @@
     <article class="milestone-card">
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <img src="img/net-zero.jpg" alt="Detailed view of a computer chip" />
+      <img src="img/net-zero.jpg" alt="Infographic containing icons of net-zero goals" />
       <p>
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
@@ -122,7 +122,7 @@
     <article class="milestone-card">
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img src="img/renewable-electricity.jpg" alt="Intel processor with circuit connections" />
+      <img src="img/renewable-electricity.jpg" alt="Photograph of solar panels and wind turbines" />
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
@@ -134,7 +134,7 @@
     <article class="milestone-card">
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img src="img/sustainability-summit.png" alt="Processor surrounded by circuit pathways" />
+      <img src="img/sustainability-summit.png" alt="Photograph of attendees at a sustainability summit" />
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
@@ -245,17 +245,19 @@
       <div class="newsletter-content">
         <p class="eyebrow">Stay informed</p>
         <h2 id="newsletter-heading">Subscribe to our Newsletter</h2>
-        <p>Get the latest updates about Intel's sustainability progress delivered to your inbox.</p>
+        <p id="newsletter-help">Get the latest updates about Intel's sustainability progress delivered to your inbox.</p>
 
         <!-- Bootstrap form controls create a responsive newsletter signup form. -->
-        <form class="row g-3 align-items-end" action="#" method="post">
+        <form class="row g-3 align-items-end" action="#" method="post" aria-describedby="newsletter-help">
           <div class="col-12 col-md-7">
-            <label class="form-label" for="newsletter-email">Email address</label>
-            <input class="form-control" type="email" id="newsletter-email" name="email" placeholder="you@example.com" required />
+            <label class="form-label" for="newsletter-email">Email address <span aria-hidden="true">*</span><span class="visually-hidden"> required</span></label>
+            <input class="form-control" type="email" id="newsletter-email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-describedby="newsletter-email-help" required />
+            <div id="newsletter-email-help" class="form-text">Required. We will only use your email for sustainability updates.</div>
           </div>
           <div class="col-12 col-md-5">
             <button class="btn newsletter-button w-100" type="submit">Subscribe</button>
           </div>
+          <div id="newsletter-status" class="visually-hidden" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
