@@ -260,6 +260,48 @@ h1 {
 	outline-offset: 3px;
 }
 
+.details-section {
+	padding: 0 24px 72px;
+}
+
+.details-section h2 {
+	margin: 0 0 20px;
+	color: var(--deep-blue);
+	font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
+	font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.details-section .accordion {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.details-section .accordion-item {
+	border-color: var(--line);
+}
+
+.details-section .accordion-button {
+	color: var(--deep-blue);
+	font-weight: 600;
+}
+
+.details-section .accordion-button:not(.collapsed) {
+	color: var(--white);
+	background: var(--intel-blue);
+	box-shadow: none;
+}
+
+.details-section .accordion-button:focus {
+	border-color: #7dd3fc;
+	box-shadow: 0 0 0 0.25rem rgba(0, 163, 224, 0.25);
+}
+
+.details-section .accordion-body {
+	color: var(--muted);
+	background: var(--white);
+	line-height: 1.7;
+}
+
 .newsletter-section {
 	padding: 0 24px 72px;
 }
@@ -391,6 +433,10 @@ h1 {
 	}
 
 	.newsletter-section {
+		padding: 0 20px 52px;
+	}
+
+	.details-section {
 		padding: 0 20px 52px;
 	}
 
