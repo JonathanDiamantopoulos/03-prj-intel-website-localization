@@ -255,6 +255,93 @@ h1 {
 	outline-offset: 3px;
 }
 
+.newsletter-section {
+	padding: 0 24px 72px;
+}
+
+.newsletter-content {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 42px;
+	background: var(--deep-blue);
+	color: var(--white);
+	box-shadow: 0 14px 30px rgba(0, 60, 113, 0.14);
+}
+
+.newsletter-content .eyebrow {
+	color: #7dd3fc;
+}
+
+.newsletter-content h2 {
+	margin: 0 0 10px;
+	font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
+	font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.newsletter-content > p:not(.eyebrow) {
+	margin-bottom: 26px;
+	color: #d9f2ff;
+	line-height: 1.6;
+}
+
+.newsletter-content .form-label {
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.newsletter-content .form-control {
+	min-height: 46px;
+	border: 0;
+	border-radius: 3px;
+}
+
+.newsletter-button {
+	min-height: 46px;
+	color: var(--white);
+	background: #00a3e0;
+	font-weight: 600;
+	border-radius: 3px;
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus-visible {
+	color: var(--white);
+	background: var(--intel-blue);
+}
+
+.newsletter-button:focus-visible {
+	outline: 3px solid #7dd3fc;
+	outline-offset: 3px;
+}
+
+.site-footer {
+	padding: 26px 24px;
+	color: #d9f2ff;
+	background: #002d5b;
+	font-size: 0.85rem;
+}
+
+.site-footer p {
+	margin: 0 0 14px;
+}
+
+.site-footer nav {
+	display: flex;
+	gap: 18px;
+	flex-wrap: wrap;
+}
+
+.site-footer a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+	color: #7dd3fc;
+	text-decoration: underline;
+}
+
 @media (max-width: 600px) {
 	.hero {
 		padding: 36px 20px 50px;
@@ -296,5 +383,13 @@ h1 {
 
 	.feature-section {
 		padding: 20px 20px 52px;
+	}
+
+	.newsletter-section {
+		padding: 0 20px 52px;
+	}
+
+	.newsletter-content {
+		padding: 30px 24px;
 	}
 }
