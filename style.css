@@ -104,7 +104,6 @@ h1 {
 	gap: 20px;
 	padding: 8px 4px 28px;
 	overflow-x: auto;
-	direction: rtl;
 	scroll-snap-type: x mandatory;
 	scrollbar-color: var(--intel-blue) var(--line);
 	scrollbar-width: thin;
@@ -192,7 +191,7 @@ h1 {
 
 .scroll-note span {
 	display: inline-block;
-	margin-right: 6px;
+	margin-inline-start: 6px;
 	color: var(--intel-blue);
 	font-size: 1.2rem;
 }
@@ -248,6 +247,11 @@ h1 {
 .learn-more-link:focus-visible {
 	color: var(--white);
 	background: var(--deep-blue);
+	transform: translateX(3px);
+}
+
+[dir="rtl"] .learn-more-link:hover,
+[dir="rtl"] .learn-more-link:focus-visible {
 	transform: translateX(-3px);
 }
 
